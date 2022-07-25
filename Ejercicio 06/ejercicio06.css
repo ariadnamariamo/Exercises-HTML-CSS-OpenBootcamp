@@ -1,0 +1,16 @@
+#button:hover{
+    color: white;
+    background-color: green;
+}
+
+#button:before {
+    content: "PASA POR ENCIMA";
+}
+
+#button:hover::before {
+    content: "";
+}
+
+#button:hover::after{
+    content: "¡Hecho!";
+}
