@@ -1,0 +1,44 @@
+.contenedor{
+    display: flex;
+    height: 100vh;
+}
+
+
+.barra-lateral{
+    background-color: black;
+    padding: 1rem;
+    gap: 0.5rem;
+    
+}
+
+.elemento-vertical{
+    background-color: blue;
+    margin-top: 10px;
+    display: flex;
+    height: 30%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-principal{
+    background-color: aqua;
+    padding: 0.25rem;
+    display: flex;
+    flex-grow: 1;
+}
+
+@media (max-width: 640px) {
+    .contenedor {
+        display: flex;
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+    .barra-lateral{
+        display: flex;
+        
+    }
+    .elemento-vertical{
+        height: 30px;
+    }
+}
